@@ -26,3 +26,17 @@ function getComputerChoice() {
       break;
   }
 }
+/* A FUNCTION THAT GET THE USER'S CHOICE */
+
+function getPlayerChoice() {
+  const playerSelection = prompt("enter your choice");
+  if(playerSelection.trim().toLowerCase() === Rock || Scissor || Paper ){
+    return playerSelection;
+  }else{
+    return "invalid input";
+  }
+  // const output =
+  //   playerSelection.trim().toLowerCase() === Rock || Scissor || Paper ? playerSelection :'';
+  // return output;
+}
+
