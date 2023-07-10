@@ -65,3 +65,27 @@ function playRound(computerSelection, playerSelection) {
   
 }
 
+/* PLAY THE WHOLE GAME*/
+
+
+function game() {
+  for (let i = 0; i < 5; i++) {
+    const computerSelection = getComputerChoice();
+    const playerSelection = getPlayerChoice();
+    const response = playRound(computerSelection, playerSelection);
+    console.log(
+      response,
+      `
+    Computer: ${computerMarks}
+    player:${playerMarks}
+    Tie Games:${tieGames} `
+    );
+  }
+  console.log(`
+  ++++++++++++=====================+++++++++++++
+                   Game is over!   
+  ++++++++++++=====================+++++++++++++`)
+}
+
+game();
+
