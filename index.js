@@ -39,4 +39,29 @@ function getPlayerChoice() {
   //   playerSelection.trim().toLowerCase() === Rock || Scissor || Paper ? playerSelection :'';
   // return output;
 }
+/* PLAY  ONE ROUND*/
+
+function playRound(computerSelection, playerSelection) {
+  if (
+    (computerSelection == Rock && playerSelection == Scissor) ||
+    (computerSelection == Scissor && playerSelection == Paper) ||
+    (computerSelection == Paper && playerSelection == Rock)
+  ) {
+    computerMarks++;
+    return `You Lose ${computerSelection} beats ${playerSelection}`;
+  } else if (
+    (playerSelection == Rock && computerSelection== Scissor) ||
+    (playerSelection == Scissor && computerSelection == Paper) ||
+    (playerSelection == Paper && computerSelection == Rock)
+  ){
+    playerMarks++;
+    return " Congratulations! you win";
+  }else if (computerSelection === playerSelection) {
+    tieGames++;
+    return "It is a tie! game";
+  }else{
+    return "Invalid input"
+  }
+  
+}
 
