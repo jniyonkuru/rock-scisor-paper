@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.container > h1{
+    text-align: center;
+    font-size: 50px;
+}
+body{
+    background: url(./images/wp2661660.jpg);
+    font-family: 'Inter', sans-serif;
+}
+h1{
+    margin-bottom: 50px;
+}
+.container{
+    margin:30px auto;
+    display:flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 600px;
+    color:#e5e90a;
+}
+.hide{
+    opacity: 0;
+    display: none;
+}
+.display{
+    min-height: 100px;
+    justify-content: space-around;
+
+}
+.container--button{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 150px;
+    margin-bottom: 5px; 
+    flex-wrap: wrap;
+    gap:10px;
+}
+.button{
+    width: 180px;
+    height: 100px;
+    border-radius:8px;
+    background:#E3DFEA;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow:2px 3px #0e0d0d; ;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+.button:hover{
+    transform: scale(.92);
+    background: #f07a7a;
+}
+.message{
+    height: 200px;
+    font-weight: 900;
+    text-align: center;
+    font-size: 5rem;
+}
+img{
+    height: 35px;
+    width: 35px;
+}
+#start{
+   margin:200px  auto;
+   position: absolute;
+   top:100px;
+   left:600px;
+   font-weight: 900;
+   font-size: 32px;
+}
+
